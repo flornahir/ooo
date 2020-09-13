@@ -1,0 +1,433 @@
+/*=============================================
+GLOBAL
+=============================================*/
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+*{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+}
+
+a, p, h1, h2, h3, h4{
+	background-color: transparent;
+}
+
+.content-fluid{
+	position:relative;
+	margin:auto;
+	width:100%;
+	height: auto;
+}
+
+.row{
+	position:relative;
+	margin:auto;
+	width:100%;
+	height: auto;
+	clear:both;
+	display:table;
+}
+
+[class*="col-"]{
+	float:left;
+	padding:0px;
+}
+
+/*--------------------------------------------------------------------*/
+
+.content-fluid{
+	border:solid 10px #FDFFF1;
+}
+
+.main-header{
+	background-color: #FADE7B;
+	padding-bottom: 30px;
+}
+
+.nav-h{
+	width: 100%;
+	display: block;
+}
+.nav-h ul{
+	display: block;
+	float: right;
+	padding: 20px;
+}
+.nav-h ul li{
+	display: inline-block;
+	padding: 10px;
+}
+.nav-h ul li a{
+	color:#FDFFF1;
+}
+
+.logo-name{
+	clear: right;
+}
+
+.logo-name img{
+	width: 25%;
+	margin: 0 auto 10px;
+	display: block;
+}
+
+.logo-name h1{
+	font-size: 3em;
+	padding: 5px;
+}
+
+.logo-name h1, .logo-name h4{
+	text-align: center;
+	color: #FDFFF1;
+}
+
+/*-----*/
+.section1{
+	background-image: url("../img/heladoo.png");
+	background-position:-130px 50%;
+	background-repeat: no-repeat;
+	background-size: 20%;
+	padding: 70px;
+}
+
+.art{
+	display:grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-template-areas:
+	"texto texto texto image image";
+	box-sizing: border-box;
+}
+
+.art .text, .art-too .text-too{
+	padding: 60px 20px;
+	grid-area:texto;
+}
+
+.art .text h2, .art-too .text-too h2{
+	font-size: 2em;
+	padding: 15px 10px;
+}
+
+.art .text p, .art-too .text-too p{
+	padding: 10px 0;
+}
+
+.art .image, .art-too .image-too{
+	grid-area:image;
+}
+
+.art .image img, .art-too .image-too img{
+	width: 100%;
+}
+
+.section1-too{
+	background-image: url("../img/heladoo.png");
+	background-position:112% 50%;
+	background-repeat: no-repeat;
+	background-size: 20%;
+	padding: 70px;
+}
+
+.art-too{
+	display:grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-template-areas:
+	"image image texto texto texto";
+	box-sizing: border-box;
+}
+
+/*----*/
+
+.section2{
+	margin: 30px 0;
+}
+
+.pink-block, .aqua-block, .pinkl-block{
+	padding: 25px;
+}
+
+.section2 .pink-block{
+	background-color: #FDD0CD;
+}
+
+.section2 .aqua-block{
+	background-color: #92EBD5;
+}
+
+.section2 .pinkl-block{
+	background-color: #FDD8BD;
+}
+
+.text-block{
+	padding:10px;
+	color: #FDFFF1;
+	text-align: center;
+}
+
+.text-block h2{
+	font-size: 2.2em;
+	padding: 10px 0;
+}
+
+.aqua-block .text-block{
+	padding: 10px 10px 20px;
+}
+
+.aqua-block .text-block h2{
+	padding: 0 0 10px;
+}
+
+/*-------*/
+
+.section3 .padding{
+	padding: 40px 70px;
+	display:grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-areas:
+	"img img t-img t-img";
+	box-sizing: border-box;
+}
+
+.section3 .img{
+	padding: 20px 30px 30px 0px;
+	grid-area:img;
+}
+
+.section3 .img img{
+	width: 100%;
+}
+
+.section3 .text-img{
+	padding: 20px;
+	grid-area:t-img;
+}
+
+.section3 .text-img .just-text{
+	padding: 5px;
+}
+
+.section3 .text-img .just-text h2{
+	padding: 10px 0;
+}
+
+.section3 .text-img img{
+	width: 100%;
+}
+
+.section4 .padding-too{
+	padding: 20px 70px;
+	display:grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-areas:
+	"txt txt img img";
+	box-sizing: border-box;
+}
+
+.section4 .text{
+	padding: 10px;
+	grid-area:txt;
+}
+
+.section4 .text h2{
+	padding:15px 0;
+}
+
+.section4 .imag{
+	grid-area:img;
+}
+
+.section4 .imag img{
+	width: 100%;
+}
+
+/*----*/
+
+.footer{
+	margin-top: 30px;
+	background-color: #FADE7B;
+	padding: 20px 40px;
+}
+
+.footer .sm li{
+	display: inline-block;
+	margin: 0 12.5%;
+}
+
+.footer .sm svg{
+	fill:white;
+}
+
+/*=============================================
+PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
+=============================================*/
+
+@media(min-width:1200px){
+	.col-lg-12{width:100%;}
+	.col-lg-11{width:91.66666667%;}
+	.col-lg-10{width:83.33333333%;}
+	.col-lg-9{width:75%;}
+	.col-lg-8{width:66.66666667%;}
+	.col-lg-7{width:58.33333333%;}
+	.col-lg-6{width:50%;}
+	.col-lg-5{width:41.66666667%;}
+	.col-lg-4{width: 33.33333333%;}
+	.col-lg-3{width: 25%;}
+	.col-lg-2 {width: 16.66666667%;}
+	.col-lg-1 {width: 8.33333333%;}
+	.col-lg-0{display:none;}
+}
+
+/*=============================================
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
+=============================================*/
+
+@media(max-width:1199px) and (min-width:992px){
+	.col-md-12{width:100%;}
+	.col-md-11{width:91.66666667%;}
+	.col-md-10{width:83.33333333%;}
+	.col-md-9{width:75%;}
+	.col-md-8{width:66.66666667%;}
+	.col-md-7{width:58.33333333%;}
+	.col-md-6{width:50%;}
+	.col-md-5{width:41.66666667%;}
+	.col-md-4{width: 33.33333333%;}
+	.col-md-3{width: 25%;}
+	.col-md-2{width: 16.66666667%;}
+	.col-md-1{width: 8.33333333%;}
+	.col-md-0{display:none;}
+}
+
+/*=============================================
+PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
+=============================================*/
+
+@media(max-width:991px) and (min-width:768px){
+	.col-sm-12{width:100%;}
+	.col-sm-11{width:91.66666667%;}
+	.col-sm-10{width:83.33333333%;}
+	.col-sm-9{width:75%;}
+	.col-sm-8{width:66.66666667%;}
+	.col-sm-7{width:58.33333333%;}
+	.col-sm-6{width:50%;}
+	.col-sm-5{width:41.66666667%;}
+	.col-sm-4{width: 33.33333333%;}
+	.col-sm-3{width: 25%;}
+	.col-sm-2{width: 16.66666667%;}
+	.col-sm-1{width: 8.33333333%;}
+	.col-sm-0{display:none;}
+
+	.section1{
+		background-position:-100px 50%;
+		background-size: 50%;
+		padding:40px 40px 20px;
+	}
+
+	.section1-too{
+		background-position:145% 50%;
+		background-size: 50%;
+		padding: 40px;
+	}
+
+
+	.section3 .padding{
+		padding: 20px 40px;
+		grid-template-areas:
+	}
+
+	.pinkl-block img{
+		width: 60%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.section4 .padding-too{
+		padding: 5px 40px;
+	}
+
+	.footer{
+		padding: 10px 20px;
+	}
+
+	.footer .sm li{
+		margin: 0 10%;
+	}
+}
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
+=============================================*/
+
+@media(max-width:767px){
+	.col-xs-12{width:100%;}
+	.col-xs-11{width:91.66666667%;}
+	.col-xs-10{width:83.33333333%;}
+	.col-xs-9{width:75%;}
+	.col-xs-8{width:66.66666667%;}
+	.col-xs-7{width:58.33333333%;}
+	.col-xs-6{width:50%;}
+	.col-xs-5{width:41.66666667%;}
+	.col-xs-4{width: 33.33333333%;}
+	.col-xs-3{width: 25%;}
+	.col-xs-2{width: 16.66666667%;}
+	.col-xs-1{width: 8.33333333%;}
+	.col-xs-0{display:none;}
+
+	.section1{
+		background-position:-100px 50%;
+		background-size: 50%;
+		padding:40px 40px 10px;
+	}
+
+	.section1-too{
+		background-position:145% 50%;
+		background-size: 50%;
+		padding: 40px;
+	}
+	.art{
+		grid-template-areas:
+		"texto texto texto texto texto"
+		"image image image image image";
+	}
+
+	.art-too{
+		grid-template-areas:
+		"texto texto texto texto texto"
+		"image image image image image";
+	}
+
+	.section3 .padding{
+		padding: 20px 40px;
+		grid-template-areas:
+		"t-img t-img t-img t-img";
+	}
+
+	.section3 .img{
+		display: none;
+	}
+
+	.pink-block img, .aqua-block img, .pinkl-block img{
+		width: 60%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.section4 .padding-too{
+		padding: 5px 40px;
+		grid-template-areas:
+		"img img img img"
+		"txt txt txt txt";
+	}
+
+	.footer{
+		padding: 10px 20px;
+	}
+
+	.footer .sm li{
+		margin: 0 10%;
+	}
+}
