@@ -2,6 +2,7 @@ const cacheName = "app-v3";
 var dataCacheName = 'app-v3';
 const cacheUrls = [
     "/",
+    "https://flornahir.github.io/ooo/",
     "/index.html",
     "/js/app.js",
     "/css/style.css",
